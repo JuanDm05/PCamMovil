@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCam.Vistas.Camaras"
+             Title="Camaras"
+             IconImageSource="Segurity"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms">
+    <Grid BackgroundColor="#525050">
+        <Frame Grid.Column="0"
+               Margin="0,0,0,0"
+               BackgroundColor="White">
+            <Grid>
+                <Frame Margin="-20,-20,-20,600"
+                       BackgroundColor="White"
+                       WidthRequest="370"
+                       HorizontalOptions="Fill">
+                    <ImageButton Source="user"
+                                 BackgroundColor="White"
+                                 HorizontalOptions="Start"
+                                 WidthRequest="50"
+                                 CornerRadius="15"
+                                 Grid.Column="1"
+                                 Margin="-10,0,0,-10"
+                                 Clicked="ImageButton_Clicked"/>
+                </Frame>
+                <Label Text=""
+                       TextColor="Black"
+                       FontSize="30"
+                       HorizontalTextAlignment="End"
+                       Margin="-10,0,0,10" />
+                <Label Text="Camaras"
+                       TextColor="Black"
+                       FontSize="30"
+                       HorizontalTextAlignment="Center"
+                       TextTransform="Default"
+                       FontAttributes="Italic" />
+            </Grid>
+        </Frame>
+        <Label Text="Proximamente" Margin="100,400,0,0" FontSize="25" TextColor="Black"/>
+        <StackLayout>
+            <forms:AnimationView x:Name="animacion"
+                                 Animation="Mantenimiento.json"
+                                 HeightRequest="150"
+                                 WidthRequest="150"
+                                 AutoPlay="True"
+                                 RepeatMode="Infinite"
+                                 Margin="0,210 ,0,0"
+                                 VerticalOptions="Center" />
+        </StackLayout>
+        <Frame HorizontalOptions="End"
+               VerticalOptions="End"
+               WidthRequest="370"
+               HeightRequest="20"
+               CornerRadius="15" HasShadow="True" BorderColor="Black">
+            <Grid RowDefinitions="*"
+                  ColumnDefinitions="5">
+                <ImageButton Source="home"
+                             Aspect="AspectFill"
+                             Grid.Column="1"
+                             Margin="10,-10,10,-10"
+                             Padding="7"
+                             BackgroundColor="White"
+                             CornerRadius="70"
+                              Clicked="ImageButton_Clicked_1"/>
+                <ImageButton Source="Segurity"
+                             Aspect="AspectFill"
+                             Grid.Column="2"
+                             Margin="10,-10,10,-10"
+                             Padding="7"
+                             BackgroundColor="White"
+                             CornerRadius="70"
+                              Clicked="ImageButton_Clicked_2"/>
+                <ImageButton Source="file"
+                             Aspect="AspectFill"
+                             Grid.Column="3"
+                             Margin="10,-10,10,-10"
+                             Padding="7"
+                             BackgroundColor="White"
+                             CornerRadius="70"
+                              Clicked="ImageButton_Clicked_3"/>
+                <ImageButton Source="settings"
+                             Aspect="AspectFill"
+                             Grid.Column="4"
+                             Margin="10,-10,10,-10"
+                             Padding="7"
+                             BackgroundColor="White"
+                             CornerRadius="70"
+                              Clicked="ImageButton_Clicked_4"/>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

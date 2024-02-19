@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCam.Vistas.Perfil"
+             NavigationPage.HasNavigationBar="False">
+    <Grid BackgroundColor="#525050">
+        <Frame Grid.Column="0"
+               Margin="0,0,0,0">
+            <Grid>
+                <Frame Margin="-20,-20,-20,600"
+                       BackgroundColor="White"
+                       WidthRequest="370"
+                       HorizontalOptions="Fill">
+                    <ImageButton Source="user"
+                                 BackgroundColor="White"
+                                 HorizontalOptions="Start"
+                                 WidthRequest="50"
+                                 CornerRadius="15"
+                                 Grid.Column="1"
+                                 Margin="-10,0,0,-10"
+                                 />
+                </Frame>
+                <Label Text=""
+                       TextColor="Black"
+                       FontSize="30"
+                       HorizontalTextAlignment="End"
+                       Margin="-10,0,0,10" />
+                <Label Text="Perfil"
+                       TextColor="Black"
+                       FontSize="30"
+                       HorizontalTextAlignment="Center"
+                       TextTransform="Default"
+                       FontAttributes="Italic" />
+            </Grid>
+        </Frame>
+        <Frame Margin="0,65,0,0"
+               BackgroundColor="#66ffff">
+            <StackLayout>
+                <Label Text="Nombre"/>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="0,65,0,0"
+               BackgroundColor="White">
+            <StackLayout>
+                <ImageButton Source="user"
+                             BackgroundColor="White"
+                             HorizontalOptions="Start"
+                             WidthRequest="60"
+                             CornerRadius="15"
+                             Grid.Column="1"
+                             Margin="-10,0,0,-10" />
+                <Label Text="Nombre:" TextColor="Black" FontSize="20" />
+                <Label Text="Francisco Alejandro Ochoa Gamez"
+                       TextColor="Black"
+                       FontSize="20" />
+                <Label Text="Correo:"
+                       TextColor="Black"
+                       FontSize="20" />
+                <Label Text="francogamez23gmail.com"
+                       TextColor="Black"
+                       FontSize="20" />
+                <Label Text="Numero Celular:"
+                       TextColor="Black"
+                       FontSize="20" />
+                <Label Text="6441107008"
+                       TextColor="Black"
+                       FontSize="20" />
+                <Label Text="Contraseña:"
+                       TextColor="Black"
+                       FontSize="20" />
+                <Label Text="********"
+                       TextColor="Black"
+                       FontSize="20" />
+            </StackLayout>
+        </Frame>
+        <Frame HorizontalOptions="End"
+               VerticalOptions="End"
+               HasShadow="True"
+               BorderColor="Black"
+               WidthRequest="370"
+               HeightRequest="20"
+               CornerRadius="15">
+            <Grid RowDefinitions="*"
+                  ColumnDefinitions="5">
+                <ImageButton Source="home"
+                             Aspect="AspectFill"
+                             Grid.Column="1"
+                             Margin="10,-10,10,-10"
+                             Padding="7"
+                             BackgroundColor="White"
+                             CornerRadius="70"
+                              Clicked="ImageButton_Clicked"/>
+                <ImageButton Source="Segurity"
+                             Aspect="AspectFill"
+                             Grid.Column="2"
+                             Margin="10,-10,10,-10"
+                             Padding="7"
+                             BackgroundColor="White"
+                             CornerRadius="70"
+                              Clicked="ImageButton_Clicked_1"/>
+                <ImageButton Source="file"
+                             Aspect="AspectFill"
+                             Grid.Column="3"
+                             Margin="10,-10,10,-10"
+                             Padding="7"
+                             BackgroundColor="White"
+                             CornerRadius="70"
+                              Clicked="ImageButton_Clicked_2"/>
+                <ImageButton Source="settings"
+                             Aspect="AspectFill"
+                             Grid.Column="4"
+                             Margin="10,-10,10,-10"
+                             Padding="7"
+                             BackgroundColor="White"
+                             CornerRadius="70"
+                              Clicked="ImageButton_Clicked_3"/>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

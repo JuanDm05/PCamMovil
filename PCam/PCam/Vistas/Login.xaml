@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="PCam.Vistas.Login"
+             BackgroundImageSource="Fotoportada.jpg"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <forms:AnimationView x:Name="animacion"
+                                 Animation="Inicio.json"
+                                 HeightRequest="150"
+                                 WidthRequest="150" 
+                                 AutoPlay="True"
+                                 RepeatMode="Infinite"
+                                 Margin="0,-20 ,0,0"
+                                 VerticalOptions="Center" />
+            <Entry Placeholder="Username" TextColor="White" PlaceholderColor="White"/>
+            <Entry Placeholder="Password"
+                   TextColor="White"
+                   IsPassword="True"
+                   PlaceholderColor="White" />
+            <Button VerticalOptions="Center"
+                    Text="Login"
+                    TextColor="Black"
+                    BorderWidth="1.5"
+                    CornerRadius="50" 
+                    BorderColor="Black"
+                    
+                    Clicked="Button_Clicked"/>
+            <Grid>
+                <Button Margin="-10,0,0,0" Grid.Column="2" FontSize="10" FontAttributes="Italic" Text="Registro" BackgroundColor="Transparent"  TextColor="White" 
+                        Clicked="Button_Clicked_2"/>
+                <Button Margin="-130,0,10,0"
+                        Grid.Column="1"
+                        FontSize="10"
+                        TextColor="White"
+                        FontAttributes="Italic"
+                        BackgroundColor="Transparent"
+                        Text="No sabes tu contraseña?"
+                        Clicked="Button_Clicked_1"/>
+            </Grid>
+            <Label Text="O" TextColor="White" HorizontalOptions="Center"/>
+            <Grid>
+            <Image Source="https://i.ibb.co/CKDyymF/facebook-3.png" WidthRequest="40" HeightRequest="40" Margin="0,0,100,0"/>
+            <Image Source="https://i.ibb.co/SxxmLVN/twitter.png " WidthRequest="40" HeightRequest="40" Margin="20,0,0,0"/>
+                <Image Source="https://i.ibb.co/qgP4qxF/instagram-1.png" WidthRequest="40" HeightRequest="40" Margin="130,0,0,0"/>
+            </Grid>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

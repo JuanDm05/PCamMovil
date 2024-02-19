@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCam.Vistas.Pestana2"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#cc6600">
+            <forms:AnimationView x:Name="animacion"
+                                 Animation="CameraS.json"
+                                 HeightRequest="280"
+                                 WidthRequest="280"
+                                 AutoPlay="True"
+                                 RepeatMode="Infinite"
+                                 Margin="0,-20 ,0,0"
+                                 VerticalOptions="Center"
+                                 BackgroundColor="#cc6600" />
+            <Frame Margin="0,50,0,-50"
+                   BackgroundColor="#cc9933">
+                <StackLayout Margin="0,0,0,240"
+                             BackgroundColor="#cc9933">
+                    <Label Text="Que es Security Cam? "
+                           FontSize="20"
+                           HorizontalOptions="Center" FontAttributes="Italic"
+                           TextColor="White" />
+                    <Label Text="Security Cam es una aplicacion encargada en la seguridad de los usuarios mediante una camara de seguridad de la cual les proporcionara un sistema en el cual se puedan realizar acciones mismas de la propia camara."
+                           FontSize="15"
+                           TextColor="White"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+                    <Label Text="Ademas de que les sera de utilizad en caso de algun allanamiento y asi poder prevenir lo mas rapido posible."
+                           FontSize="15"
+                           TextColor="White"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+                    <Button Margin="0,60,0,0"
+                            Text="-->"
+                            
+                            HorizontalOptions="Center"
+                            BackgroundColor="#ff6600"
+                            BorderColor="White"
+                            BorderWidth="1"
+                            CornerRadius="30" Clicked="Button_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

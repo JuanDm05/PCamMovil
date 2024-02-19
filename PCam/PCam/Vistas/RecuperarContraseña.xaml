@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="PCam.Vistas.RecuperarContraseña"
+             BackgroundImageSource="Fotoportada.jpg"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="40"
+                     VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand">
+            <forms:AnimationView x:Name="animacion"
+                                 Animation="Password.json"
+                                 HeightRequest="150"
+                                 WidthRequest="150"
+                                 AutoPlay="True"
+                                 RepeatMode="Infinite"
+                                 Margin="0,-20 ,0,0"
+                                 VerticalOptions="Center" />
+            <Label FontSize="11" HorizontalOptions="Center" Text="!Coloca tu correo electronico para poder realizar el cambio de contraseña¡" TextColor="White" TextTransform="Default" TextDecorations="None"/>
+            <Entry Placeholder="Confirm Email"
+                   TextColor="White"
+                   PlaceholderColor="White" />
+            <Entry Placeholder="Password"
+                   TextColor="White"
+                   IsPassword="True"
+                   PlaceholderColor="White" />
+            <Button VerticalOptions="Center"
+                    Text="Change Password"
+                    TextColor="Black"
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                    BorderColor="Black"
+                     Clicked="Button_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

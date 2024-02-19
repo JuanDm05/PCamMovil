@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCam.Vistas.Pestana1"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#0099CC">
+            <forms:AnimationView x:Name="animacion"
+                                 Animation="RobotS.json"
+                                 HeightRequest="280"
+                                 WidthRequest="280"
+                                 AutoPlay="True"
+                                 RepeatMode="Infinite"
+                                 Margin="0,-20 ,0,0"
+                                 VerticalOptions="Center"
+                                 BackgroundColor="#0099CC" />
+            <Frame Margin="0,50,0,-50"
+                   BackgroundColor="#006699">
+                <StackLayout Margin="0,0,0,240"
+                             BackgroundColor="#006699">
+                    <Label Text="Bienvenido a Security Cam "
+                           FontSize="20"
+                           HorizontalOptions="Center"
+                           TextColor="White"  />
+                    <Label Text="Esta es una aplicacion la cual se encarga en la verificacion de viviendas madiante una camara de seguridad"
+                           FontSize="15"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+                    <Label Text="Esta aplicacion esta diseñada por:"
+                           FontSize="15"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+                    <Label Text="Francisco Alejandro Ochoa Gamez"
+                           FontSize="15"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+                    <Label Text="Juan Adolfo Dominguez Muñoz"
+                           FontSize="15"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+                    <Label Text="Dirier Sebastian Aguirre Valenzuela"
+                           FontSize="15"
+                           TextColor="White"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center" />
+                    <Button Margin="0,50,0,0"
+                            Text="-->"
+                            CornerRadius="30"
+                            HorizontalOptions="Center"
+                            BackgroundColor="#0066ff" BorderColor="White" BorderWidth="1" Clicked="Button_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

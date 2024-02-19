@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCam.Vistas.Pestana3"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#66ff99">
+            <forms:AnimationView x:Name="animacion"
+                                 Animation="Gracias.json"
+                                 HeightRequest="280"
+                                 WidthRequest="280"
+                                 AutoPlay="True"
+                                 RepeatMode="Infinite"
+                                 Margin="0,-20 ,0,0"
+                                 VerticalOptions="Center"
+                                 BackgroundColor="#66ff99" />
+            <Frame Margin="0,50,0,-50"
+                   BackgroundColor="#009966" CornerRadius="15">
+                <StackLayout Margin="0,0,0,240"
+                             BackgroundColor="#009966">
+                    <Label Text="Muchas Gracias por utilizar nuestra aplicacion"
+                           FontSize="20"
+                           FontAttributes="Italic"
+                           HorizontalOptions="Center"
+                           TextColor="White" />
+                    <Label Text="Nos complace que haya elegido esta aplicacion para su conveniencia."
+                           FontSize="20"
+                           TextColor="White"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Start"
+                           VerticalTextAlignment="Start" FontAttributes="Italic" />
+                    
+                    <Button Margin="0,90,0,0"
+                            Text="-->"
+                            HorizontalOptions="Center"
+                            BackgroundColor="#33cc33"
+                            CornerRadius="30"
+                            BorderColor="White"
+                            BorderWidth="1"
+                            Clicked="Button_Clicked"/>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

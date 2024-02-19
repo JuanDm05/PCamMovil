@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace PCam.Vistas
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class VistaCamara : ContentPage
+    {
+        public VistaCamara()
+        {
+            InitializeComponent();
+        }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Inicio());
+        }
+
+        private async void ImageButton_Clicked_1(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Camaras());
+        }
+
+        private async void ImageButton_Clicked_2(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Historial());
+        }
+
+        private async void ImageButton_Clicked_3(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Configuracion());
+        }
+    }
+}
